@@ -113,27 +113,25 @@ input {
 /* SEARCH BOX */
 .search-form {
     border-radius: 18px;
-    position: fixed;
-    bottom: 60px;
-    left: 30px;
-    z-index: 100;
+    position: static;
+    width: 500px;
+    margin-bottom: 20px;
 }
 
 .search-box {
+    width: 100% !important;
     border: none;
     outline: none;
     box-shadow: none;
-    width: 0px;
-    padding: 0px;
-    transition: 0.5s;
+    border-radius: 0px 18px 18px 0px !important;
 }
 
 .search-box-icon {
-    border-radius: 50%;
+    border-radius: 18px 0px 0px 18px !important;
     padding: 14px 16px !important;
     position: relative;
     left: 1px;
-    border: 1px solid gray;
+    border: none;
 }
 
 .form-control:focus {
@@ -233,7 +231,7 @@ input {
 }
 
 .foods {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .foods .title,
@@ -345,5 +343,26 @@ input {
         top: 50%;
         transform: translate(-50%, -50%);
         color: #e9e9e9;
+    }
+
+    /* SEARCH BOX */
+    .search-form {
+        border-radius: 18px;
+        width: 100%;
+    }
+
+    .search-box {
+        width: 100% !important;
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .search-box-icon {
+        border-radius: 18px 0px 0px 18px !important;
+        padding: 14px 16px !important;
+        position: relative;
+        left: 1px;
+        border: none;
     }
 }

@@ -31,28 +31,28 @@ $(document).ready(function () {
     });
 
     // mouse over on search input
-    $('.search-box-icon').mouseover(function () {
-        // focus search box
-        $('.search-box').focus();
-        // if ($(window).width() >= 992) {
-        // open search box
-        $('.search-box').css({
-            width: '400px',
-            padding: '0px 5px',
-            borderRadius: '0px 18px 18px 0px'
-        });
+    // $('.search-box-icon').mouseover(function () {
+    //     if ($(window).width() >= 992) {
+    //         // focus search box
+    //         $('.search-box').focus();
+    //         // open search box
+    //         $('.search-box').css({
+    //             width: '400px',
+    //             padding: '0px 5px',
+    //             borderRadius: '0px 18px 18px 0px',
+    //         });
 
-        $('.search-box-icon').css({ borderRadius: '18px 0px 0px 18px' });
-        // }
-    });
+    //         $('.search-box-icon').css({ borderRadius: '18px 0px 0px 18px' });
+    //         // check not focus search box
+    //         $('.search-box').on("blur", function () {
+    //             $('.search-box').focus();
+    //         });
+    //     }
+    // });
 
-    // check not focus search box
-    $('.search-box').on("blur", function () {
-        $('.search-box').focus();
-    });
-    $('.search-box').mouseleave(function () {
-        closeSearchBox();
-    });
+    // $('.search-box').mouseleave(function () {
+    //     closeSearchBox();
+    // });
 
     // get height page with function and add styles to elements
     pageSize();
@@ -66,14 +66,14 @@ $(document).ready(function () {
     //     windowScroll();
     // });
 });
-function closeSearchBox() {
-    // search box not empty&& $(window).width() >= 992
-    if ($('.search-box').val() == '') {
-        // close search box
-        $('.search-box').css({ width: '0', padding: 0 });
-        $('.search-box-icon').css('border-radius', '50%');
-    }
-}
+// function closeSearchBox() {
+//     // search box not empty
+//     if ($('.search-box').val() == '' && $(window).width() >= 992) {
+//         // close search box
+//         $('.search-box').css({ width: '0', padding: 0 });
+//         $('.search-box-icon').css('border-radius', '50%');
+//     }
+// }
 // function windowScroll() {
 //     if ($(window).scrollTop() >= $(window).height() - 100) {
 //         $('#navbar').removeClass('navbar-dark bg-gradient');
