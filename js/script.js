@@ -65,7 +65,33 @@ $(document).ready(function () {
     // $(window).scroll(function () {
     //     windowScroll();
     // });
+    $('.menu').click(function () {
+        $(this).toggleClass('open');
+    });
+
+    slideShow('right');
 });
+
+function slideShow(direction) {
+    if (direction == 'right') {
+        $('.header-image .slider-container').animate({ scrollLeft: '+=150' }, 1700, function () {
+            if ($(this).scrollLeft() <= $('.header-image .slider-container').get(0).scrollWidth - $('.header-image .slider-container').get(0).clientWidth - 1) {
+                slideShow('right');
+            } else {
+                slideShow('left');
+            }
+        });
+    }
+    if (direction == 'left') {
+        $('.header-image .slider-container').animate({ scrollLeft: '-=150' }, 1700, function () {
+            if ($(this).scrollLeft() >= 1) {
+                slideShow('left');
+            } else {
+                slideShow('right');
+            }
+        });
+    }
+}
 // function closeSearchBox() {
 //     // search box not empty
 //     if ($('.search-box').val() == '' && $(window).width() >= 992) {
