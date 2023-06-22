@@ -43,6 +43,10 @@ input {
     max-height: 75px;
 }
 
+.navbar-container {
+    transition: 0.5s;
+}
+
 .nav-link {
     font-family: vazirBold;
     position: relative;

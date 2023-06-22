@@ -16,7 +16,7 @@
 
 <body>
     <nav id="navbar" class="navbar navbar-expand-md bg-light navbar-ligth fixed-top p-0 shadow-lg">
-        <div class="container-fluid mb-0 mt-0">
+        <div class="container-fluid mb-0 mt-0 navbar-container">
             <a href="" class="navbar-brand p-0 m-0">
                 <img height="80" src="images/logo.png" alt="">
             </a>
@@ -24,7 +24,8 @@
                 <a href="#"><i class="fa-solid fa-cart-shopping mb-2 me-3"></i></a>
                 <a href="#"><i class="fa-solid fa-user p-2 mt-2 link-offset-3-hover"></i></a>
             </div>
-            <button class="navbar-toggler custom-toggler" aria-label="Main Menu Toggle navigation"
+            <button id="navbar-toggler" class="navbar-toggler custom-toggler collapsed"
+                aria-label="Main Menu Toggle navigation"
                 onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
                 type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-expanded="false">
                 <svg width="60" height="60" viewBox="0 0 100 100">
