@@ -15,16 +15,16 @@
 </head>
 
 <body>
-    <nav id="navbar" class="navbar navbar-expand-md bg-light navbar-ligth fixed-top p-0 shadow">
-        <div class="container-fluid bg-light mb-0 mt-0">
+    <nav id="navbar" class="navbar navbar-expand-md bg-light navbar-ligth fixed-top p-0 shadow-lg">
+        <div class="container-fluid mb-0 mt-0">
             <a href="" class="navbar-brand p-0 m-0">
                 <img height="80" src="images/logo.png" alt="">
             </a>
-            <div class="cart-user-container d-block ms-3 mt-2 ps-3 pe-3 bg-light rounded-pill h4">
-                <a href="#" class="text-secondary"><i class="fa-solid fa-cart-shopping mb-2 me-3"></i></a>
-                <a href="#" class="text-secondary"><i class="fa-solid fa-user p-2 mt-2 link-offset-3-hover"></i></a>
+            <div class="cart-user-container d-block ms-3 mt-2 ps-3 pe-3 rounded-pill h4">
+                <a href="#"><i class="fa-solid fa-cart-shopping mb-2 me-3"></i></a>
+                <a href="#"><i class="fa-solid fa-user p-2 mt-2 link-offset-3-hover"></i></a>
             </div>
-            <button class="navbar-toggler custom-toggler mt-2" aria-label="Main Menu Toggle navigation"
+            <button class="navbar-toggler custom-toggler" aria-label="Main Menu Toggle navigation"
                 onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
                 type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-expanded="false">
                 <svg width="60" height="60" viewBox="0 0 100 100">
@@ -35,8 +35,8 @@
                         d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
                 </svg>
             </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-lg-row-reverse">
+            <div class="collapse navbar-collapse mt-2" id="mynavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-md-row-reverse">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>

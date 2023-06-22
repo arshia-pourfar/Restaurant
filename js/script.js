@@ -30,43 +30,17 @@ $(document).ready(function () {
         $('.dropdown-toggle').attr('aria-expanded', false);
     });
 
-    // mouse over on search input
-    // $('.search-box-icon').mouseover(function () {
-    //     if ($(window).width() >= 992) {
-    //         // focus search box
-    //         $('.search-box').focus();
-    //         // open search box
-    //         $('.search-box').css({
-    //             width: '400px',
-    //             padding: '0px 5px',
-    //             borderRadius: '0px 18px 18px 0px',
-    //         });
-
-    //         $('.search-box-icon').css({ borderRadius: '18px 0px 0px 18px' });
-    //         // check not focus search box
-    //         $('.search-box').on("blur", function () {
-    //             $('.search-box').focus();
-    //         });
-    //     }
-    // });
-
-    // $('.search-box').mouseleave(function () {
-    //     closeSearchBox();
-    // });
-
     // get height page with function and add styles to elements
     pageSize();
     $(window).resize(function () {
         pageSize();
+        windowScroll();
     });
 
     // on page scroll call function and add styles to elements
-    // windowScroll();
-    // $(window).scroll(function () {
-    //     windowScroll();
-    // });
-    $('.menu').click(function () {
-        $(this).toggleClass('open');
+    windowScroll();
+    $(window).scroll(function () {
+        windowScroll();
     });
 
     slideShow('right');
@@ -92,39 +66,31 @@ function slideShow(direction) {
         });
     }
 }
-// function closeSearchBox() {
-//     // search box not empty
-//     if ($('.search-box').val() == '' && $(window).width() >= 992) {
-//         // close search box
-//         $('.search-box').css({ width: '0', padding: 0 });
-//         $('.search-box-icon').css('border-radius', '50%');
-//     }
-// }
-// function windowScroll() {
-//     if ($(window).scrollTop() >= $(window).height() - 100) {
-//         $('#navbar').removeClass('navbar-dark bg-gradient');
-//         $('#navbar').addClass('navbar-light bg-light shadow-lg');
-//         $('.nav-link').css('color', '#000');
-//         $('.search-form').css('border', '1px solid #b9b9b9');
-//         $('.navbar').attr('style', 'background-image: none');
-//         $('.search-box').css('width', '100%');
-//     } else {
-//         $('#navbar').removeClass('navbar-light bg-light shadow-lg');
-//         $('#navbar').addClass('navbar-dark bg-gradient');
-//         $('.nav-link').css('color', '#fff');
-//         $('.search-form').css('border', 'none');
-//         $('.navbar').attr('style', 'background-image: linear-gradient(rgba(26, 25, 25, 0.589), rgba(255, 255, 255, 0)) !important;');
-//         $('.search-box').css({ width: 0, padding: 0 });
-//         $('.search-box-icon').css({ borderRadius: '50%' });
-//     }
-// }
+
+function windowScroll() {
+    if ($(window).scrollTop() <= $(window).height() - 75 && $(window).width() <= 992) {
+        $('#navbar').removeClass('navbar-light bg-light shadow-lg');
+        $('#navbar').addClass('navbar-dark bg-gradient');
+        $('.nav-link').css('color', '#fff');
+        $('.line').css('stroke', '#fff');
+        $('.navbar-brand img').attr('src', 'images/logo-light.png');
+        $('.cart-user-container a').css('color', '#fff');
+        $('.navbar').attr('style', 'background-image: linear-gradient(rgb(0 0 0 / 86%), rgb(0 0 0 / 7%)) !important');
+    } else {
+        $('#navbar').removeClass('navbar-dark bg-gradient');
+        $('#navbar').addClass('navbar-light bg-light shadow-lg');
+        $('.nav-link').css('color', '#000');
+        $('.line').css('stroke', '#000');
+        $('.navbar-brand img').attr('src', 'images/logo.png');
+        $('.cart-user-container a').css('color', 'gray');
+        $('.navbar').attr('style', 'background-image: none;');
+
+    }
+}
 
 function pageSize() {
     if ($(window).height() >= 510 && $(window).height() <= 992) {
         pageHeight = $(window).height();
         $('.header-image').css('height', pageHeight);
     }
-    // if ($(window).width() <= 980) {
-    //     $('.header-image').css()
-    // }
 }
