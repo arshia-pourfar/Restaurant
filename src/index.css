@@ -1,0 +1,253 @@
+body,
+html {
+    overflow-x: hidden;
+    height: 100dvh;
+}
+
+/* color palette
+
+white #fff
+black #2E1B1B
+red #F53D37
+yellow #FED03B
+brown #A25648
+ */
+/* navbar */
+#navbar {
+    max-height: 15dvh;
+}
+
+#navbar .navbar-nav .active {
+    font-weight: bold;
+    color: #F53D37;
+}
+
+#navbar .navbar-nav .active::before,
+#navbar .navbar-nav .dropdown::before {
+    background-color: #F53D37;
+    border-radius: 4px;
+    scale: 1;
+    transform-origin: right;
+    transition: scale 0.25s;
+}
+
+#navbar .navbar-nav a,
+#navbar .navbar-nav .dropdown {
+    position: relative;
+    color: #2E1B1B;
+    background-color: transparent;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin: 0px 3px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#navbar .navbar-brand img {
+    width: 80px;
+}
+
+#navbar .navbar-nav a::before,
+#navbar .navbar-nav .dropdown::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #F53D37;
+    border-radius: 4px;
+    scale: 0;
+    transform-origin: right;
+    transition: scale 0.25s;
+}
+
+#navbar .navbar-nav a:hover::before,
+#navbar .navbar-nav .dropdown:hover::before {
+    scale: 1;
+    transform-origin: left;
+}
+
+#navbar .container-dropdown {
+    width: 100%;
+    height: 100dvh;
+    top: 0px;
+    z-index: 1;
+    position: absolute;
+    background: transparent;
+}
+
+#navbar .dropdown-item .navbar-nav a:hover::before,
+#navbar .dropdown-item .navbar-nav .dropdown:hover::before {
+    scale: 0 !important;
+}
+
+/* HEADER STYLE */
+#header {
+    height: 85dvh;
+    min-height: 610px;
+}
+
+#header .header-image .bg-header-image {
+    position: absolute;
+    rotate: 30deg;
+    right: -325px;
+    top: -70px;
+    width: 800px;
+    height: 800px;
+    z-index: -1;
+    background-color: #F53D37;
+    border-radius: 130px;
+}
+
+#header .header-image img {
+    rotate: -20deg;
+    position: relative;
+    right: -30%;
+    top: -53px;
+    filter: drop-shadow(0px 1px 8px #000000c0);
+}
+
+
+#header .scroll-carousel-viewport {
+    height: 280px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+#menu .items .fa-cart-shopping {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#menu .items .fa-cart-shopping:hover {
+    transform: rotateY(180deg);
+}
+
+.style-module_simpleStarRating__nWUxf .star-svg {
+    display: inline-block;
+}
+
+#about-us .image {
+    width: 100%;
+}
+
+#about-us .image .bg-image {
+    background-color: #fff;
+    height: 100dvh;
+    width: 400px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    rotate: -30deg;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul li:first-child {
+    display: none !important;
+}
+
+.dropdown ul li span {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown ul li span svg {
+    display: inline-block;
+    bottom: 3px;
+    position: relative;
+    margin-right: 10px;
+}
+
+#menu .category .active div {
+    background-color: #2E1B1B;
+    opacity: 1;
+}
+
+/* modal login */
+#navbar .modal {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100dvw;
+    height: 100%;
+    background-color: #22181862;
+    z-index: 10;
+}
+
+#navbar .modal .container {
+    width: 100vw;
+    height: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding: 0 2rem;
+}
+
+#navbar .modal .login-content .input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 20px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+#navbar .modal .i {
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar .modal .i i {
+    transition: 0.3s;
+}
+
+#navbar .modal .input {
+    width: max-content;
+    border: none;
+    outline: none;
+    box-shadow: none !important;
+}
+
+#navbar .modal .input-lable {
+    color: rgb(129, 129, 129);
+    cursor: text;
+    position: absolute;
+    transform: translate(35px, 10px);
+    transition: transform .25s;
+    top: 1px;
+}
+
+#navbar .modal .input:focus+.input-lable,
+#navbar .modal .input:valid+.input-lable {
+    transform: translate(30px, -13px)scale(.83);
+}
+
+#navbar .modal .btn {
+    display: block;
+    width: 100%;
+    height: 55px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #F53D37, #f53d37c9, #f53d37f1);
+    background-size: 200%;
+    font-size: 1.3rem;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#navbar .modal .btn:hover {
+    background-position: right;
+}

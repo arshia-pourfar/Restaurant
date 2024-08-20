@@ -1,0 +1,64 @@
+{
+  "name": "first-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^7.1.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@trendyol-js/react-carousel": "^3.0.2",
+    "babel-plugin-macros": "^3.1.0",
+    "cra-template": "1.2.0",
+    "css-loader": "^6.8.1",
+    "framer-motion": "^10.16.4",
+    "jquery": "^3.7.1",
+    "postcss-loader": "^7.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-focus-lock": "^2.9.5",
+    "react-icons": "^4.11.0",
+    "react-native-heroicons": "^3.2.0",
+    "react-router": "^6.21.2",
+    "react-router-dom": "^6.21.2",
+    "react-scripts": "5.0.1",
+    "react-simple-star-rating": "^5.1.7",
+    "scroll-carousel-react": "^1.0.0",
+    "styled-components": "^6.0.8",
+    "swiper": "^10.3.0",
+    "tippy.js": "^6.3.7",
+    "tw-elements": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.29",
+    "autoprefixer": "^9.8.8",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  }
+}

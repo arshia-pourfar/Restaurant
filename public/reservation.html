@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="reservation-page">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jQuery-library.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+    <script src="https://unpkg.com/persian-date@1.1.0/dist/persian-date.min.js"></script>
+    <title>my Restaurant</title>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-md bg-light navbar-ligth fixed-top p-0 shadow-lg">
+        <div class="container-fluid mb-0 mt-0 navbar-container">
+            <a href="" class="navbar-brand p-0 m-0">
+                <img height="80" src="images/logo.png" alt="">
+            </a>
+            <div class="cart-user-container d-block ms-3 mt-2 ps-3 pe-3 rounded-pill h4">
+                <a href="#"><i class="fa-solid fa-cart-shopping mb-2 me-3"></i></a>
+                <a href="#"><i class="fa-solid fa-user p-2 mt-2 link-offset-3-hover"></i></a>
+            </div>
+            <button id="navbar-toggler" class="navbar-toggler custom-toggler collapsed"
+                aria-label="Main Menu Toggle navigation"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" aria-expanded="false">
+                <svg width="60" height="60" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+            <div class="collapse navbar-collapse mt-2" id="mynavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 flex-md-row-reverse">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown-center">
+                        <a class="nav-link dropdown-toggle menu-btn" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu bg-light">
+                            <li><a class="dropdown-item" href="#">test</a></li>
+                            <li><a class="dropdown-item" href="#">test</a></li>
+                            <li><a class="dropdown-item" href="#">test</a></li>
+                            <li><a class="dropdown-item" href="#">test</a></li>
+                            <li><a class="dropdown-item" href="#">test</a></li>
+                            <li><a class="dropdown-item" href="#">test</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link about-btn">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Reservations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid p-0 container-reserv-page">
+        <div class="image-reserv-page"></div>
+        <div class="container-reserv-card">
+            <div class="card">
+                <div class="wrapper">
+                    <h1 class="title">Reservation</h1>
+                    <form action="inc/functions.php" method="post" class="text-center">
+                        <div class="container-calendar">
+                            <i class="far fa-calendar fa-lg"></i>
+                            <input readonly
+                                class="text-input w-100 p-2 mt-3 rounded-pill example1 text-center shadow-lg"
+                                name="date" type="text">
+                        </div>
+                        <input required class="text-input w-100 p-2 ps-3 mt-3 rounded-pill text-start shadow-lg"
+                            type="text" name="username" placeholder="Name ...">
+                        <input required class="text-input w-100 p-2 ps-3 mt-3 rounded-pill text-start shadow-lg"
+                            type="tell" name="phonenumber" placeholder="Phone Number ...">
+                        <input required class="text-input w-100 p-2 ps-3 mt-3 rounded-pill text-start shadow-lg"
+                            type="number" name="phonenumber" placeholder="Number of seats ...">
+                        <div class="text-center d-block mt-4">
+                            <input class="btn-submit btn btn-success p-2 pe-4 ps-4 shadow-lg" name="btn-submit"
+                                type="submit" value="Reserv">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
