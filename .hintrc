@@ -1,0 +1,60 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off"
+      }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
+    ],
+    "no-inline-styles": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "detect-css-reflows/composite": "off",
+    "detect-css-reflows/layout": "off",
+    "detect-css-reflows/paint": "off",
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "text-align: -webkit-match-parent",
+          "-webkit-text-size-adjust",
+          "-webkit-tap-highlight-color",
+          "scroll-behavior",
+          "text-decoration-skip-ink",
+          "-webkit-overflow-scrolling",
+          "overflow-anchor",
+          "scale",
+          "backdrop-filter",
+          "contain",
+          "user-select",
+          "rotate",
+          "height: fit-content"
+        ]
+      }
+    ],
+    "highest-available-document-mode": "off",
+    "create-element-svg": "off",
+    "meta-viewport": "off",
+    "disown-opener": "off",
+    "axe/aria": [
+      "default",
+      {
+        "aria-progressbar-name": "off",
+        "aria-allowed-attr": "off"
+      }
+    ]
+  }
+}
