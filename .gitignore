@@ -35,9 +35,6 @@ yarn-debug.log*
 yarn-error.log*
 .craco.config.js
 
-# Tailwind/PostCSS
-postcss.config.js
-tailwind.config.js
 
 # React Native Heroicons (if caching assets)
 *.cache/
