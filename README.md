@@ -19,21 +19,20 @@ A modern, responsive restaurant website built with **React**, designed with a fo
 ## 🛠️ Technologies Used
 
 - **React** – Functional components, JSX, state management
-- **Tailwind CSS / Bootstrap** – Utility-first responsive design (choose based on your setup)
+- **Tailwind CSS ** – Utility-first responsive design
 - **JavaScript** – Main programming language
-- **React Router** – For routing and navigation (if used)
-- **Axios** – For data fetching (if applicable)
+- **React Router** – For routing and navigation
 - **React Icons** – For scalable vector icons
 
 ---
 
 ## ✨ Features
 
-- ✅ Fully responsive (works on mobile, tablet, and desktop)
-- 🔗 Smooth scroll navigation across sections
-- 🍽 Menu showcase with images and dish details
-- 📬 Contact or reservation section
-- 👣 Footer with social media/contact info
+- ✅ Fully responsive (works on mobile, tablet, and desktop)  
+- 🔗 Smooth scroll navigation across sections  
+- 🍽 Menu showcase with images and dish details  
+- 📬 Contact or reservation section  
+- 🔻 Footer with social media/contact info  
 - ⚙️ Modular component-based structure
 
 ---
@@ -58,8 +57,8 @@ Restaurant/
 ├── public/
 ├── src/
 │   ├── components/        # Header, Footer, Menu, Contact, etc.
-│   ├── pages/             # Main views (if applicable)
-│   ├── styles/            # Tailwind/Bootstrap/custom styles
+│   ├── pages/             # Main views
+│   ├── data/              # Static data
 │   ├── App.js             # Main app logic and routes
 │   └── index.js           # React entry point
 └── package.json
