@@ -53,6 +53,8 @@ http://localhost:3000
 ---
 
 ## 📂 Project Structure
+
+```plaintext
 Restaurant/
 ├── public/
 ├── src/
