@@ -19,7 +19,7 @@ A modern, responsive restaurant website built with **React**, designed with a fo
 ## 🛠️ Technologies Used
 
 - **React** – Functional components, JSX, state management
-- **Tailwind CSS ** – Utility-first responsive design
+- **Tailwind CSS** – Utility-first responsive design
 - **JavaScript** – Main programming language
 - **React Router** – For routing and navigation
 - **React Icons** – For scalable vector icons
