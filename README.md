@@ -64,6 +64,7 @@ Restaurant/
 │   ├── App.js             # Main app logic and routes
 │   └── index.js           # React entry point
 └── package.json
+```
 
 ---
 
