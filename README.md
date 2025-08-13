@@ -84,4 +84,5 @@ Contributions and suggestions are welcome!
 
 **Arshia Pourfar**  
 🔗 [GitHub Profile](https://github.com/arshia-pourfar)  
-📧 [arshiapourfar@gmail.com](mailto:arshiapourfar@gmail.com)
+💼 [LinkedIn](https://www.linkedin.com/in/arshia-pourfar)  
+📧 [arshiapourfar@gmail.com](mailto:arshiapourfar@gmail.com)   
