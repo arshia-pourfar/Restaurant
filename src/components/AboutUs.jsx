@@ -1,6 +1,6 @@
 const AboutUs = () => (
-    <section id="about-us" className="flex justify-between items-center relative my-5">
-        <div className="text w-1/2">
+    <section id="about-us" className="flex lg:flex-row flex-col justify-between items-center relative lg:my-5 my-16">
+        <div className="text lg:w-1/2">
             <h1 className="font-bold text-4xl">About Us</h1>
             <p className="mt-6 line-clamp-[8]">
                 At our restaurant, every dish tells a story. We blend tradition with creativity to serve meals that are both comforting and unforgettable.
@@ -16,7 +16,7 @@ const AboutUs = () => (
                 <a href="./about">Read More</a>
             </button>
         </div>
-        <div className="image relative left-20 w-1/2">
+        <div className="image relative w-1/2 lg:flex hidden">
             <img
                 className="h-[600px] rounded-lg m-auto"
                 src={require('../images/20230915135832_[fpdl.in]_vector-art-office-staff-their-jobs_975572-1876_full.jpg')}

@@ -25,7 +25,7 @@ const MenuList = ({ productsArrayRead, categories, limit }) => {
 
             if (limit && currentNum <= 11) {
                 return (
-                    <article key={product.id} className="basis-1/4 p-2">
+                    <article key={product.id} >
                         <ProductCard product={product} />
                     </article>
                 );
@@ -33,7 +33,7 @@ const MenuList = ({ productsArrayRead, categories, limit }) => {
 
             if (limit && currentNum === 12) {
                 return (
-                    <article key={product.id} className="basis-1/4 p-2 relative">
+                    <article key={product.id} >
                         <ProductCard product={product} blurred linkTo="/menu" />
                     </article>
                 );
@@ -41,7 +41,7 @@ const MenuList = ({ productsArrayRead, categories, limit }) => {
 
             if (!limit) {
                 return (
-                    <article key={product.id} className="basis-1/4 p-2">
+                    <article key={product.id}>
                         <ProductCard product={product} />
                     </article>
                 );
@@ -68,7 +68,7 @@ const MenuList = ({ productsArrayRead, categories, limit }) => {
             />
 
             {/* لیست محصولات */}
-            <div className="foods-item flex flex-wrap justify-start items-center mt-8">
+            <div className="foods-item mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 relative z-50">
                 {renderedFoods}
             </div>
         </section>

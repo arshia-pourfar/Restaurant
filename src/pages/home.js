@@ -8,7 +8,7 @@ import Header from '../components/Header';
 
 const Home = () => {
     return (
-        <>
+        <div className='xl:px-14 lg:px-6 px-3'>
             <Header />
             <MenuList
                 productsArrayRead={productList}
@@ -17,7 +17,7 @@ const Home = () => {
             />
             <AboutUs />
             <WhyUs />
-        </>
+        </div>
     );
 };
 
