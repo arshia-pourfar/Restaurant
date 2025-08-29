@@ -37,7 +37,7 @@ function Navbar() {
             </button>
 
             {/* Navigation Links - Desktop */}
-            <ul className="hidden lg:flex justify-center items-center basis-6/12 font-medium">
+            <ul className="hidden lg:flex justify-center items-center basis-6/12 font-medium gap-2">
                 {navLinks.map(({ to, label }) => (
                     <NavLink
                         key={to}

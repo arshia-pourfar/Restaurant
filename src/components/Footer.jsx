@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
     return (
         <>
-            <footer className="footer grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-14 pt-6 text-black min-h-[35dvh] border-t-2 px-6 lg:px-12 gap-8">
+            <footer className="footer grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-14 pt-6 text-black border-t-2 px-6 lg:px-12 gap-8">
                 {/* لوگو و آیکون‌ها */}
                 <div className="text-left">
                     <img
@@ -55,7 +55,7 @@ function Footer() {
                 </div>
             </footer>
 
-            <span className="text-center block mt-6 mb-7 text-sm text-gray-500">
+            <span className="text-center block my-6 text-sm text-gray-500">
                 Copyright © 2023 All rights reserved
             </span>
         </>
