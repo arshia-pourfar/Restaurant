@@ -20,7 +20,7 @@ function Navbar() {
     ];
 
     return (
-        <nav id="navbar" className="relative flex justify-between items-center py-2 px-4 lg:px-10">
+        <nav id="navbar" className="relative flex justify-between items-center lg:py-2 px-4 lg:px-10">
             {/* Logo */}
             <div className="basis-3/12">
                 <NavLink to="/" className="inline-block">
@@ -87,7 +87,7 @@ function Navbar() {
             {/* Mobile Menu */}
             {mobileMenuOpen && (
                 <div className="absolute top-full left-0 w-full bg-white shadow-md z-40 lg:hidden">
-                    <ul className="flex flex-col items-center py-4 font-medium">
+                    <ul className="flex flex-col items-center pb-4 font-medium">
                         {navLinks.map(({ to, label }) => (
                             <NavLink
                                 key={to}

@@ -22,12 +22,12 @@ const Header = () => (
             <ShoppingList />
         </div>
 
-        <div className="header-image lg:w-6/12 relative z-40 xl:-top-[800px] xl:-right-[17%] -top-[400px] -right-[150px] lg:inline-block hidden">
+        <div className="header-image lg:w-6/12 relative z-40 xl:-top-[800px] xl:-right-[18%] -top-[400px] -right-[150px] lg:inline-block hidden">
             <div className="absolute rotate-[30deg] xl:size-[1400px] size-[800px] bg-red rounded-[130px] z-0"></div>
             <img
                 src={headerImage}
                 alt="Header"
-                className="rotate-[-20deg] 2xl:w-[500px] xl:w-[400px] absolute 2xl:translate-y-1/2 xl:translate-y-3/4 lg:top-24 drop-shadow-[0px_1px_8px_#000000c0]"
+                className="rotate-[-25deg] xl:w-[500px] absolute xl:translate-y-1/2 xl:-left-36 xl:top-0 lg:-left-20 lg:top-10 drop-shadow-[0px_1px_8px_#000000c0]"
             />
         </div>
     </header>
